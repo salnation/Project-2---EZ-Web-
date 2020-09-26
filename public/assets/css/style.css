@@ -1,0 +1,315 @@
+.sortable { 
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: inherit !important;
+    width: 100%;
+    display: inline-block;
+}
+.sortable li {
+    border: none;
+    float: left;
+    width: 100%;
+    background: none;
+    margin: 0 0 10px 0;
+    padding: 0 30px 10px 0;
+    border-bottom: 1px dotted #999;
+    position: inherit !important;
+}
+.sortable  .sortable-placeholder {
+    float: left; 
+    width: 90%;
+    height: 100px;
+    border: 1px dotted #FFF;
+    border-radius: 5px;
+    background: #FEFEFE;
+    -moz-box-shadow:    inset 0 0 4px #777;
+    -webkit-box-shadow: inset 0 0 4px #777;
+    box-shadow:         inset 0 0 4px #777;
+}
+.btn-remove { 
+    color: red !important;
+    position: absolute; 
+    right: 0px;
+    top: 17px;
+}
+.btn-remove.disabled,.btn-remove.disabled:hover {
+    color: gray !important;
+}
+.btn-remove:hover { 
+    color: #DD0000 !important; 
+    position: absolute; 
+    right: 0px;
+    top: 17px;
+}
+
+.btn-sort {
+    position: absolute; 
+    right: 3px;
+    top: 45px;
+}
+
+#home {
+    background-image: url(/assets/images/home.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 500px;
+    color: black;
+}  
+
+body#home .logo { 
+    width: 80%; height: auto !important; max-width: 600px;
+}
+
+body#home h1 {
+    margin-top: 10%;
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+#home .subheader {
+    font-size: 1.95em;
+    font-weight: 100 !important;
+}
+
+.promos {
+    margin: 50px auto;
+    color: #FFF;
+    text-align: center;
+}
+
+.promos span { 
+    font-weight: light;
+    display: inline-block;
+    margin: 20px auto;
+    border: 1px solid #FFF; 
+    padding: 30px;
+    border-radius: 1000px; 
+    font-size: 70px;
+    max-width: 170px;
+    width: 100%;
+}
+
+.get-started { 
+    max-width: 800px;
+    background: rgba(0,0,0,0.6);
+    list-style: none; 
+    display: block; 
+    width: 100%; 
+    margin: 50px auto 20px;
+    border-radius: 10px; 
+    padding: 30px 0 40px 0;
+}
+.get-started li { 
+    display: inline-block; 
+    color: #eee;
+    
+}
+.cta-signup { 
+    float: left; 
+    border-right: 1px solid #ccc; 
+    padding: 20px 40px;
+    letter-spacing: 0.09em;
+    font-size: 30px;
+    margin: 10px 30px 0px 0;
+}
+.get-started .button { 
+    padding: 10px 20px;
+    color: #FFF;
+    text-decoration: none;
+    border-radius: 4px;
+    background: #1946c2;
+    margin: 0 0 10px 0;
+    display: inline-block;
+    width: 100%;
+    max-width: 300px;
+    font-size: 25px; 
+    clear: both;
+}
+
+.get-started .login {
+    text-decoration: underline;
+    color: #999;
+}
+
+.get-started .button:hover {
+    background: rgb(12, 55, 184);
+}
+
+body#home #main-content { width: 100%; }
+#home #sitewrapper { 
+    width: 100%; 
+    height: auto !important; 
+    min-height: 100%;
+    display: inline-block;
+    background: rgba(0,0,0,0.6);
+}
+
+#home button {
+  shape-outside: -o-linear-gradient(oval);
+  /* background-color: white; */
+}
+
+#extra-options {
+    position: fixed; 
+    top: 0px;
+    width: 100%;
+    z-index: 1000;
+    background: rgba(200,200,200,0.9);
+    border-bottom: 1px solid #CCC;
+}
+
+#extra-options img {
+    margin: 5px 0 0 10px;
+    width: 130px; 
+}
+.extra-options {
+    margin: 5px;
+    float: right;
+}
+#extra-options .design { display: none; }
+
+#main { padding-top: 50px; }
+#main #sidebar { background: rgba(199,199,199,0.3); }
+
+.trumbowyg-editor { background: #FFF; }
+.filepond--drop-label { 
+    border: 3px solid #FFF; 
+    border-radius: 5px; 
+}
+#main .backButton { 
+    margin: 20px 0 30px 0;
+    display: inline-block;
+    border-radius: 4px; 
+    padding: 6px 20px;
+}
+#main .backButton:hover {
+    text-decoration: none;
+}
+
+.navbar {
+    margin-bottom: 0px;
+}
+
+.overlay {
+    display: none;
+    transition: all 0.3s linear;
+}
+
+.overlay.show { 
+    transition: all 0.3s linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0px;
+    left: 0px;
+    float: left;
+    background: rgba(22,22,22,0.9);
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    position: fixed; 
+    z-index: 1000;
+}
+.modal-content { 
+    width: 90%; transition: all 0.3s linear; 
+    margin-top: -300%; 
+    position: absolute; 
+    max-width: 450px; }
+.modal-content input {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+form.error input { border: 2px solid #FF0000; }
+
+.modal-content.show { 
+    transition: all 0.3s linear;
+    position: relative;
+    padding: 30px;
+    display: block;
+    text-align: left;
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.modal-content label {
+    color: gray;
+    margin: 10px 0 5px 0;
+}
+
+.modal-content input {
+    width: 100%;
+    border-radius: 3px;
+    height: 40px;
+    border: 1px solid #888;
+
+}
+
+.modal-content h5 {
+    font-size: 30px;
+    margin: 0 0 10px 0;
+}
+
+button.button.btn-primary { padding: 5px 30px; border-radius: 3px; }
+
+.close { 
+    position: absolute;
+    display: inline-block; 
+    right: 15px;
+    top: 15px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.close .line-one,
+.close .line-two {
+    transition: all 0.05s ease;
+    position: absolute;
+    display: inline-block;
+    height: 2px; 
+    width: 20px;
+    background:#222;
+    top: 5px;
+}
+
+
+.close .line-one {
+    top: 18px;
+    transform: rotate(-45deg);
+}
+.close .line-two {
+    top: 18px;
+    transform: rotate(45deg);
+}
+
+@media(max-width: 960px){
+    .cta-signup { 
+        border-right: none; padding: 0 0 20px 0; width: 100%; }
+
+    #main #sidebar {
+        display: none;
+    } 
+
+    #main #main-content { width: 100%; }
+    #main #sidebar.show { 
+        display: block;
+        position: absolute; 
+        width: 100%;
+        z-index: 100;
+        background: rgba(255,255,255,0.99);
+        padding-bottom: 100px;
+    } 
+    .extra-options span { display: none; }
+    #extra-options .design { display: inline; }
+}
+
+@media(max-width: 469px){
+    #extra-options { padding-top: 3px; }
+    #extra-options img { width: 110px; margin: 5px 0 4px 15px; }
+    .extra-options { font-size: 14px; }
+}
