@@ -1,0 +1,108 @@
+{{!--
+	DESCRIPTION:
+	This is fourth version with a shown mobile nav 
+--}}
+<nav class="nav-ver-four">
+
+	<a class="logo" href="/" style="background: url({{#if data.nav.customization.logo }}{{{ data.nav.customization.logo }}}{{else}}/assets/images/sample-logo.png{{/if}}) center no-repeat; background-size: contain;">
+		<img src="/assets/images/logo.gif" alt="{{#if data.nav.customization.title }}{{ data.nav.customization.title }}{{else}}logo{{/if}}">
+	</a>
+
+	<ul class="main-nav">
+		{{#each navOptions}}
+			<li>
+				<a href="#" class="jumper" data-target="page-{{lowercase title}}">{{title}}</a>
+			</li>
+		{{/each}}
+	</ul>
+
+
+
+</nav>
+
+<style>
+	nav.nav-ver-four { 
+		padding: 0 0 0 15px;
+		clear: both;
+		display: block;
+		position: relative;
+		width: 100%;
+		background: rgba(0,0,0,0.4);
+	} 
+	nav.nav-ver-four .logo { 
+		display: inline-block; 
+	}
+	nav.nav-ver-four img { 
+		width: 100%;
+		max-width: 140px;
+	}
+	nav.nav-ver-four .main-nav { 
+		float: right; 
+		list-style: none;
+		margin: 0; 
+		padding: 0;
+	}
+	nav.nav-ver-four .main-nav li { 
+		display: inline; 
+		margin: 0; 
+		padding: 0; 
+	}
+	nav.nav-ver-four .main-nav li a {
+		transition: all 0.2s linear;
+		font-family: Helvetica, sans-serif;
+		font-weight: 100;
+		text-decoration: none; 
+		color: #FFF;
+		float: left;
+		font-size: 18px;
+		padding: 22px 20px;
+	}
+	nav.nav-ver-four .main-nav li a:hover { 
+		background: rgba(255,255,255,0.4);
+	}
+	nav.nav-ver-four .hamburger { display: none; position: absolute; }
+	@media (max-width: 767px){
+		nav.nav-ver-four {
+			text-align: center;
+			padding: 0 0 0 0px;
+		}
+		nav.nav-ver-four .container {
+			min-width: 100%;
+			max-width: 100%;
+			padding: 0;
+			margin: 0;
+			text-align: center;
+		}
+	
+		nav.nav-ver-four .main-nav { 
+			overflow-x: scroll;
+			overflow-y: hidden;
+			margin: 0 auto;
+			transition: all 0.1s ease;
+			z-index: 1px;
+			width: 100%;
+			height: 45px;
+			left: auto;
+			float: left;
+			text-align: center;
+			z-index: 1;
+			display: block;
+			top: 0px;
+			background: rgba(150,150,150,0.9);
+			text-align: center;
+			width: 100%;
+		}
+		nav.nav-ver-four .main-nav li {
+			float: none;
+			display: inline-block;
+			padding: 0;
+		}
+		nav.nav-ver-four .main-nav li a {
+			display: inline-block;
+			text-align: center;
+			margin: 0 0 -5px 0;
+			padding: 10px 10px;
+		}
+		
+	}
+</style>
