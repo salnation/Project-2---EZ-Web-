@@ -1,0 +1,47 @@
+<a href="#" class="backButton button btn-secondary"><i class="fas fa-arrow-left"></i> &nbsp;Back</a>
+
+<form  method="PUT" action="/api/customization/footer" class="customizationForm">
+
+    <div class="item-one">
+        <h5>Instagram</h5>
+        <input name="instagram" placeholder="URL" class="form-control mb-3" value="{{#if data.footer.customization.instagram}}{{data.footer.customization.instagram}}{{/if}}">
+    </div>
+
+    <div class="item-two">
+        <h5>Snapchat</h5>
+        <input name="snapchat" placeholder="URL" class="form-control mb-3" value="{{#if data.footer.customization.snapchat}}{{data.footer.customization.snapchat}}{{/if}}">
+    </div>
+
+    <div class="item-three">
+        <h5>Twitter</h5>
+        <input name="twitter" placeholder="URL" class="form-control mb-3" value="{{#if data.footer.customization.twitter}}{{data.footer.customization.twitter}}{{/if}}">
+    </div>
+
+    <div class="item-four">
+        <h5>Facebook</h5>
+        <input name="facebook" placeholder="URL" class="form-control mb-3" value="{{#if data.footer.customization.facebook}}{{data.footer.customization.facebook}}{{/if}}">
+    </div>
+
+    <div class="item-five">
+        <h5>LinkedIn</h5>
+        <input name="linkedin" placeholder="URL" class="form-control mb-3" value="{{#if data.footer.customization.linkedin}}{{data.footer.customization.linkedin}}{{/if}}">
+    </div>
+
+<br>
+
+<button class="button btn-primary">Submit</button>
+</form>
+
+<style>
+    /* we use styles to hide the options */
+    .item-one,.item-two,.item-three,.item-four { margin: 0 0 30px 0; }
+    .one-text-column .item-two,
+    .one-text-column .item-three,
+    .one-text-column .item-four,
+    .three-text-columns .item-four,
+    .two-columns .item-three,
+    .two-columns .item-four,
+    .two-text-columns .item-three,
+    .two-text-columns .item-four,
+    .three-columns .item-four { display: none !important; }
+</style>
